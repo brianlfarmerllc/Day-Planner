@@ -8,17 +8,19 @@ var displayDate = document.getElementById("currentDay");
 displayDate.textContent = currentDayDate
 
 $(document).ready(function(){
+    //Adds a function at the begining of the page to clear the list     
     $(".clearBtn").on("click", function(event){
         localStorage.clear();
         location.reload();
     });
-    
+    //controls the save button functions to save the content in the class = description as well as the save buttons parrent ID 
     $(".saveBtn").on("click", function(){
         var time = $(this).parent().attr("id");
         var activity = $(this).siblings(".description").val();
         localStorage.setItem(time, activity);
         console.log(time, activity);
     });
+    // looks at the current hr using moment and compares it to the id hour to set the color as past future and present
     function colorChange(event){
         var timeBlock = moment().hour();
 
@@ -40,7 +42,7 @@ $(document).ready(function(){
         });
     }
    colorChange();
-   
+    // gets info for id and text content sections. 
    $("#9 .description").val(localStorage.getItem("9"));
    $("#10 .description").val(localStorage.getItem("10"));
    $("#11 .description").val(localStorage.getItem("11"));
