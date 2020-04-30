@@ -21,6 +21,18 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+.clearBtn {
+  height: 40px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #06AED5;
+  color: white;
+}
+
 .description{
   white-space: pre-wrap;
 }
