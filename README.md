@@ -1,6 +1,6 @@
 # Day-Planner
 
-![Day Planner Quick View](/assets/Day-Planner-Img.png)
+![Day Planner Quick View](assets/Day-Planner-Img.png)
 
 ## Summary 
 
